@@ -4,9 +4,6 @@ from flask_restful import reqparse
 app = Flask(__name__)
 app.config["SECRET_KEY"] = 'silasomurunga'
 
-parser = reqparse.RequestParser()
-parser.add_argument('username')
-
 user_details = dict()
 user_questions = {
     'question1': {'silas': 'what does YOYO mean?'},
